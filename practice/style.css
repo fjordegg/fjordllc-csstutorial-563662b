@@ -1,1 +1,30 @@
 /* ここにcssを書いてみましょう */
+
+/*-- header --*/
+#header {
+  width: 100%;
+}
+
+/*-- about --*/
+#about {
+  width: 100%;
+}
+
+/*-- body --*/
+#body {
+  overflow: hidden;
+  width: 100%;
+}
+#body #main {
+  float: left;
+  width: 600px;
+}
+#body #sub {
+  float: left;
+  width: 200px;
+}
+
+/*-- footer --*/
+#footer{
+  width: 100%;
+}
