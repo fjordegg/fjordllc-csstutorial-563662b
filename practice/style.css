@@ -9,6 +9,9 @@ div {
   margin: 0 auto;
   width: 800px;
 }
+#header nav ul li {
+  float: left;
+}
 
 /*-- header --*/
 #header {
@@ -17,6 +20,7 @@ div {
 
 /*-- about --*/
 #about {
+  clear: both;
   width: 100%;
 }
 
@@ -37,4 +41,10 @@ div {
 /*-- footer --*/
 #footer{
   width: 100%;
+}
+#footer nav ul li {
+  float: left;
+}
+#footer p.copyright {
+  clear: both;
 }
