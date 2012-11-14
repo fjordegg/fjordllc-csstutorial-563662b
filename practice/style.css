@@ -1,5 +1,9 @@
 /* ここにcssを書いてみましょう */
 
+div {
+  background-color: rgba(0,25,0,0.2);
+}
+
 /*-- wrap --*/
 #wrap {
   margin: 0 auto;
