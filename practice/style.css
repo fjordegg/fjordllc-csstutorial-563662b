@@ -1,5 +1,11 @@
 /* ここにcssを書いてみましょう */
 
+/*-- wrap --*/
+#wrap {
+  margin: 0 auto 0 auto;
+  width: 800px;
+}
+
 /*-- header --*/
 #header {
   width: 100%;
