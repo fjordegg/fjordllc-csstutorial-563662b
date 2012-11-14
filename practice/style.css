@@ -23,6 +23,12 @@ div {
   clear: both;
   width: 100%;
 }
+#about ol li {
+  float: left;
+  width: 30%;
+  margin: 0 3% 0 0;
+  list-style: none;
+}
 
 /*-- body --*/
 #body {
