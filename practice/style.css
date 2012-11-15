@@ -32,10 +32,15 @@ div, ul, ol, li {
   clear: both;
   width: 100%;
 }
+#about ol {
+  width: 762px;
+  margin: 0 auto;
+  padding: 0;
+}
 #about ol li {
   float: left;
-  width: 30%;
-  margin: 0 3% 0 0;
+  width: 250px;
+  margin: 0 2px;
   list-style: none;
 }
 
