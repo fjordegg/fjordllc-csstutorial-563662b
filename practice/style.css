@@ -9,6 +9,10 @@ div, ul, ol, li {
   background-color: rgba(0,25,0,0.2);
 }
 
+div, ul, ol {
+  overflow: hidden;
+}
+
 /*-- wrap --*/
 #wrap {
   margin: 0 auto;
@@ -17,14 +21,26 @@ div, ul, ol, li {
 
 /*-- header --*/
 #header {
-  overflow: hidden;
   width: 100%;
 }
 #header h1 {
   text-align: center;
 }
+#header nav ul {
+  margin: 0;
+  padding: 0;
+}
 #header nav ul li {
+  display: block;
   float: left;
+  margin: 5px 0;
+  width: 20%;
+  list-style: none;
+  text-align: center;
+}
+#header nav ul li a {
+  display: inline-block;
+  line-height: 40px;
 }
 
 /*-- about --*/
@@ -46,7 +62,6 @@ div, ul, ol, li {
 
 /*-- body --*/
 #body {
-  overflow: hidden;
   width: 100%;
 }
 #body #main {
