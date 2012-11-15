@@ -17,6 +17,7 @@ div {
 
 /*-- header --*/
 #header {
+  overflow: hidden;
   width: 100%;
 }
 #header h1 {
