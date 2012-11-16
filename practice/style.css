@@ -64,10 +64,24 @@ div, ul, ol {
 /*-- body --*/
 #body {
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 #body #main {
   float: left;
   width: 600px;
+}
+#body #main .breadcrumbs ol {
+  margin: 0;
+  padding: 0;
+}
+#body #main .breadcrumbs ol li {
+  float: left;
+  list-style: none;
+}
+#body #main .breadcrumbs a:after {
+  content: ">";
+  margin: 7px;
 }
 #body #sub {
   float: right;
