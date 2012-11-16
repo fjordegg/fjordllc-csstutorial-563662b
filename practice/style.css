@@ -94,6 +94,23 @@ div, header, footer, ul, ol {
   height: 170px;
   border: 1px solid black;
 }
+#body #sub #local ul {
+  margin: 0 auto;
+  padding: 0;
+  width: 190px;
+  border: 1px solid black;
+}
+#body #sub #local ul li {
+  width: 188px;
+  height: 50px;
+  list-style: none;
+  border-width: 1px;
+  border-color: #666 #999 #999 #666;
+  border-style: solid;
+}
+#body #sub #local ul li a {
+  margin: 5px;
+}
 
 /*-- footer --*/
 #footer{
