@@ -87,6 +87,13 @@ div, header, footer, ul, ol {
   float: right;
   width: 200px;
 }
+#body #sub aside.ad p {
+  margin: 5px auto;
+  padding: 10px;
+  width: 170px;
+  height: 170px;
+  border: 1px solid black;
+}
 
 /*-- footer --*/
 #footer{
