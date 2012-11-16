@@ -9,7 +9,7 @@ div, ul, ol, li {
   background-color: rgba(0,25,0,0.2);
 }
 
-div, ul, ol {
+div, header, footer, ul, ol {
   overflow: hidden;
 }
 
