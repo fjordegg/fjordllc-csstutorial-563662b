@@ -92,10 +92,25 @@ div, header, footer, ul, ol {
 #footer{
   width: 100%;
 }
+#footer nav {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+#footer nav ul {
+  margin: 0;
+  padding: 0;
+}
 #footer nav ul li {
-  float: left;
+  display: inline;
+}
+#footer nav ul li a {
+  margin: 0 6px;
 }
 #footer p.copyright {
   clear: both;
+  margin: 0;
+  padding: 0;
+  line-height: 400%;
   text-align: center;
 }
