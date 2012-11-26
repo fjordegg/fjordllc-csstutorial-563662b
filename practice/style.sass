@@ -1,140 +1,116 @@
-/* ここにcssを書いてみましょう */
+body
+  padding: 0
+  margin: 0
 
-body {
-  padding: 0;
-  margin: 0;
-}
+div, ul, ol, li
+  background-color: rgba(0, 25, 0, 0.2)
 
-div, ul, ol, li {
-  background-color: rgba(0,25,0,0.2);
-}
+div, header, footer, ul, ol
+  overflow: hidden
 
-div, header, footer, ul, ol {
-  overflow: hidden;
-}
+/*-- wrap --
 
-/*-- wrap --*/
-#wrap {
-  margin: 0 auto;
-  width: 800px;
-}
+#wrap
+  margin: 0 auto
+  width: 800px
 
-/*-- header --*/
-#header {
-  width: 100%;
-}
-#header h1 {
-  text-align: center;
-}
-#header nav ul {
-  margin: 0;
-  padding: 0;
-}
-#header nav ul li {
-  display: block;
-  float: left;
-  margin: 0;
-  width: 20%;
-  list-style: none;
-  text-align: center;
-}
-#header nav ul li a {
-  display: inline-block;
-  line-height: 40px;
-}
+/*-- header --
 
-/*-- about --*/
-#about {
-  clear: both;
-  width: 100%;
-  margin: 5px 0;
-}
-#about ol {
-  width: 762px;
-  margin: 0 auto;
-  padding: 0;
-}
-#about ol li {
-  float: left;
-  width: 250px;
-  margin: 0 2px;
-  list-style: none;
-}
+#header
+  width: 100%
+  h1
+    text-align: center
+  nav ul
+    margin: 0
+    padding: 0
+    li
+      display: block
+      float: left
+      margin: 0
+      width: 20%
+      list-style: none
+      text-align: center
+      a
+        display: inline-block
+        line-height: 40px
 
-/*-- body --*/
-#body {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-#body #main {
-  float: left;
-  width: 600px;
-}
-#body #main .breadcrumbs ol {
-  margin: 0;
-  padding: 0;
-}
-#body #main .breadcrumbs ol li {
-  float: left;
-  list-style: none;
-}
-#body #main .breadcrumbs a:after {
-  content: ">";
-  margin: 7px;
-}
-#body #sub {
-  float: right;
-  width: 200px;
-}
-#body #sub aside.ad p {
-  margin: 5px auto;
-  padding: 10px;
-  width: 170px;
-  height: 170px;
-  border: 1px solid black;
-}
-#body #sub #local ul {
-  margin: 0 auto;
-  padding: 0;
-  width: 190px;
-  border: 1px solid black;
-}
-#body #sub #local ul li {
-  width: 188px;
-  height: 50px;
-  list-style: none;
-  border-width: 1px;
-  border-color: #666 #999 #999 #666;
-  border-style: solid;
-}
-#body #sub #local ul li a {
-  margin: 5px;
-}
+/*-- about --
 
-/*-- footer --*/
-#footer{
-  width: 100%;
-}
-#footer nav {
-  text-align: center;
-  margin: 0;
-  padding: 0;
-}
-#footer nav ul {
-  margin: 0;
-  padding: 0;
-}
-#footer nav ul li {
-  display: inline;
-}
-#footer nav ul li a {
-  margin: 0 6px;
-}
-#footer p.copyright {
-  clear: both;
-  margin: 0;
-  padding: 0;
-  line-height: 400%;
-  text-align: center;
-}
+#about
+  clear: both
+  width: 100%
+  margin: 5px 0
+  ol
+    width: 762px
+    margin: 0 auto
+    padding: 0
+    li
+      float: left
+      width: 250px
+      margin: 0 2px
+      list-style: none
+
+/*-- body --
+
+#body
+  width: 100%
+  margin: 0
+  padding: 0
+  #main
+    float: left
+    width: 600px
+    .breadcrumbs
+      ol
+        margin: 0
+        padding: 0
+        li
+          float: left
+          list-style: none
+      a:after
+        content: ">"
+        margin: 7px
+  #sub
+    float: right
+    width: 200px
+    aside.ad p
+      margin: 5px auto
+      padding: 10px
+      width: 170px
+      height: 170px
+      border: 1px solid black
+    #local ul
+      margin: 0 auto
+      padding: 0
+      width: 190px
+      border: 1px solid black
+      li
+        width: 188px
+        height: 50px
+        list-style: none
+        border-width: 1px
+        border-color: #666 #999 #999 #666
+        border-style: solid
+        a
+          margin: 5px
+
+/*-- footer --
+
+#footer
+  width: 100%
+  nav
+    text-align: center
+    margin: 0
+    padding: 0
+    ul
+      margin: 0
+      padding: 0
+      li
+        display: inline
+        a
+          margin: 0 6px
+  p.copyright
+    clear: both
+    margin: 0
+    padding: 0
+    line-height: 400%
+    text-align: center
