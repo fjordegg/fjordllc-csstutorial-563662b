@@ -1,6 +1,8 @@
 @import compass/reset
 @import yui_fonts
 
+$body_width: 800px
+
 div, ul, ol, li
   background-color: rgba(0, 25, 0, 0.2)
 
@@ -8,12 +10,12 @@ div, ul, ol, li
 
 #wrap
   margin: 0 auto
-  width: 800px
+  width: $body_width
 
 /*-- header --
 
 #header
-  width: 100%
+  width: $body_width
   h1
     text-align: center
   nav ul
@@ -31,19 +33,21 @@ div, ul, ol, li
         line-height: 40px
 
 /*-- about --
+$about_content_width: 250px
+$num_of_about_contents: 3
+$about_content_margin: 2px
+$about_contents_width: ($about_content_width+$about_content_margin*2) * $num_of_about_contents
 
 #about
   clear: both
-  width: 100%
-  margin: 5px 0
+  width: $body_width
   ol
-    width: 762px
+    width: $about_contents_width
     margin: 0 auto
-    padding: 0
     li
       float: left
-      width: 250px
-      margin: 0 2px
+      width: $about_content_width
+      margin: $about_content_margin
       list-style: none
 
 /*-- body --
