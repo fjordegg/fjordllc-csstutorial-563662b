@@ -183,11 +183,19 @@ div, ul, ol, li {
   margin: 7px;
 }
 /* line 68, style.sass */
+#body #main aside#comments {
+  margin: 10px;
+}
+/* line 70, style.sass */
+#body #main aside#comments ul > li {
+  margin: 10px;
+}
+/* line 72, style.sass */
 #body #sub {
   float: right;
   width: 200px;
 }
-/* line 71, style.sass */
+/* line 75, style.sass */
 #body #sub aside.ad p {
   margin: 5px auto;
   padding: 10px;
@@ -195,14 +203,14 @@ div, ul, ol, li {
   height: 170px;
   border: 1px solid black;
 }
-/* line 77, style.sass */
+/* line 81, style.sass */
 #body #sub #local ul {
   margin: 0 auto;
   padding: 0;
   width: 190px;
   border: 1px solid black;
 }
-/* line 82, style.sass */
+/* line 86, style.sass */
 #body #sub #local ul li {
   width: 188px;
   height: 50px;
@@ -211,38 +219,39 @@ div, ul, ol, li {
   border-color: #666666 #999999 #999999 #666666;
   border-style: solid;
 }
-/* line 89, style.sass */
+/* line 93, style.sass */
 #body #sub #local ul li a {
   margin: 5px;
 }
 
 /*-- footer -- */
-/* line 94, style.sass */
+/* line 98, style.sass */
 #footer {
+  clear: both;
   width: 100%;
 }
-/* line 96, style.sass */
+/* line 101, style.sass */
 #footer nav {
+  line-height: 300%;
   text-align: center;
   margin: 0;
   padding: 0;
 }
-/* line 100, style.sass */
+/* line 106, style.sass */
 #footer nav ul {
   margin: 0;
   padding: 0;
 }
-/* line 103, style.sass */
+/* line 109, style.sass */
 #footer nav ul li {
   display: inline;
 }
-/* line 105, style.sass */
+/* line 111, style.sass */
 #footer nav ul li a {
   margin: 0 6px;
 }
-/* line 107, style.sass */
+/* line 113, style.sass */
 #footer p.copyright {
-  clear: both;
   margin: 0;
   padding: 0;
   line-height: 400%;
