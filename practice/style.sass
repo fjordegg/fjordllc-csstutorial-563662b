@@ -1,31 +1,31 @@
 @import compass/reset
 @import yui_fonts
 
-// $accent_highlight: rgba(246, 177, 195, 1)
-$accent_light: rgba(240, 120, 140, 1)
-$accent_base: rgba(222, 38, 76, 1)
-$accent_shadow: rgba(188, 13, 53, 1)
-// $accent_dark_shadow: rgba(162, 13, 30, 1)
-$wrap_width: 800px
+// $accent-highlight: rgba(246, 177, 195, 1)
+$accent-light: rgba(240, 120, 140, 1)
+$accent-base: rgba(222, 38, 76, 1)
+$accent-shadow: rgba(188, 13, 53, 1)
+// $accent-dark-shadow: rgba(162, 13, 30, 1)
+$wrap-width: 800px
 
 div, ul, ol, li
   background-color: rgba(0, 25, 0, 0.2)
 
-@mixin box_base
-  border: 1px solid $accent_light
-  outline: 1px solid $accent_shadow
-  background-color: $accent_base
+@mixin box-base
+  border: 1px solid $accent-light
+  outline: 1px solid $accent-shadow
+  background-color: $accent-base
 
 /*-- wrap --
 
 #wrap
   margin: 0 auto
-  width: $wrap_width
+  width: $wrap-width
 
 /*-- header --
 
 #header
-  width: $wrap_width
+  width: $wrap-width
   h1
     text-align: center
   nav ul
@@ -41,36 +41,36 @@ div, ul, ol, li
 
 /*-- about --
 
-$about_content_width: 250px
-$num_of_about_contents: 3
-$about_content_margin: 2px
-$about_contents_width: ($about_content_width+$about_content_margin*2) * $num_of_about_contents
+$about-content-width: 250px
+$num-of-about-contents: 3
+$about-content-margin: 2px
+$about-contents-width: ($about-content-width + $about-content-margin * 2) * $num-of-about-contents
 
 #about
   clear: both
-  width: $wrap_width
+  width: $wrap-width
   ol
-    width: $about_contents_width
+    width: $about-contents-width
     margin: 0 auto
     li
       float: left
-      width: $about_content_width
-      margin: $about_content_margin
+      width: $about-content-width
+      margin: $about-content-margin
       list-style: none
 
 /*-- body --
 
-$main_width: 600px
-$sub_width: $wrap_width - $main_width
-$sub_contents_width: $sub_width - 10px
-$sub_contents_border: 1px
-$sub_contents_margin: ($sub_width - $sub_contents_width - $sub_contents_border) / 2
+$main-width: 600px
+$sub-width: $wrap-width - $main-width
+$sub-contents-width: $sub-width - 10px
+$sub-contents-border: 1px
+$sub-contents-margin: ($sub-width - $sub-contents-width - $sub-contents-border) / 2
 
 #body
-  width: $wrap_width
+  width: $wrap-width
   #main
     float: left
-    width: $main_width
+    width: $main-width
     .breadcrumbs
       ol
         li
@@ -85,33 +85,33 @@ $sub_contents_margin: ($sub_width - $sub_contents_width - $sub_contents_border) 
         margin: 10px
   #sub
     float: right
-    width: $sub_width
+    width: $sub-width
     aside.ad
-      @include box_base
-      margin: $sub_contents_margin
-      width: $sub_contents_width
-      height: $sub_contents_width
+      @include box-base
+      margin: $sub-contents-margin
+      width: $sub-contents-width
+      height: $sub-contents-width
       p
         padding: 10px
     #local ul
-      margin: 0 $sub_contents_margin
-      width: $sub_contents_width
-      border: $sub_contents_border solid black
+      margin: 0 $sub-contents-margin
+      width: $sub-contents-width
+      border: $sub-contents-border solid black
       li
         height: 50px
         list-style: none
-        border-width: $sub_contents_border
+        border-width: $sub-contents-border
         border-color: #666 #999 #999 #666
         border-style: solid
         a
           margin: 5px
     aside.banners
-      margin: $sub_contents_margin
-      width: $sub_contents_width
-      border: $sub_contents_border solid black
+      margin: $sub-contents-margin
+      width: $sub-contents-width
+      border: $sub-contents-border solid black
       li
         height: 45px
-        border-width: $sub_contents_border
+        border-width: $sub-contents-border
         border-color: #666 #999 #999 #666
         border-style: solid
 
