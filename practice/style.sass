@@ -3,7 +3,7 @@
 
 h1, h2, h3, h4, h5, h6
   font-weight: bold
-  line-height: 200%
+  line-height: 300%
 h1
   font-size: $size-26px
 h2
@@ -22,6 +22,7 @@ $base-color: #C9F0CE
 $sub-color: #9AE0A1
 $accent-color: #EA9A5D
 $text-color: #000000
+$sub-text-color: #666666
 
 $wrap-width: 1000px
 
@@ -63,27 +64,35 @@ div, ul, ol, li
 
 /*-- about --
 
-$about-content-width: 250px
+$about-content-width: 240px
+$about-content-border-width: 2px
+$about-content-padding: 10px
 $num-of-about-contents: 3
-$about-content-margin: 2px
-$about-contents-width: ($about-content-width + $about-content-margin * 2) * $num-of-about-contents
+$about-content-margin: 24px
+$about-contents-width: ($about-content-width + $about-content-padding * 2 + $about-content-margin * 2 + $about-content-border-width * 2) * $num-of-about-contents
 
 #about
   clear: both
   width: $wrap-width
+  h2
+    line-height: 200%
   ol
     width: $about-contents-width
     margin: 0 auto
     li
+      border: $about-content-border-width solid green
+      border-radius: 7px
       float: left
       width: $about-content-width
       margin: $about-content-margin
+      padding: $about-content-padding
       list-style: none
 
 /*-- body --
 
-$main-width: 600px
-$sub-width: $wrap-width - $main-width
+$sub-width: 200px
+$main-margin: 20px
+$main-width: $wrap-width - $sub-width - $main-margin * 2
 $sub-contents-width: $sub-width - 10px
 $sub-contents-border: 1px
 $sub-contents-margin: ($sub-width - $sub-contents-width - $sub-contents-border) / 2
@@ -92,6 +101,7 @@ $sub-contents-margin: ($sub-width - $sub-contents-width - $sub-contents-border) 
   width: $wrap-width
   #main
     float: left
+    margin: $main-margin
     width: $main-width
     .breadcrumbs
       ol
@@ -105,6 +115,8 @@ $sub-contents-margin: ($sub-width - $sub-contents-width - $sub-contents-border) 
       margin: 10px
       ul > li
         margin: 10px
+        dl
+          color: $sub-text-color
   #sub
     float: right
     width: $sub-width
