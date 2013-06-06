@@ -1,6 +1,22 @@
 @import compass/reset
 @import yui_fonts
 
+h1, h2, h3, h4, h5, h6
+  font-weight: bold
+  line-height: 200%
+h1
+  font-size: $size-26px
+h2
+  font-size: $size-22px
+h3
+  font-size: $size-20px
+h4
+  font-size: $size-18px
+h5
+  font-size: $size-16px
+h6
+  font-size: $size-14px
+
 // $accent-highlight: rgba(246, 177, 195, 1)
 $accent-light: rgba(240, 120, 140, 1)
 $accent-base: rgba(222, 38, 76, 1)
@@ -10,6 +26,7 @@ $wrap-width: 800px
 
 div, ul, ol, li
   background-color: rgba(0, 25, 0, 0.2)
+  overflow: hidden
 
 @mixin box-base
   border: 1px solid $accent-light
