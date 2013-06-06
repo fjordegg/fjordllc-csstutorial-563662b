@@ -129,29 +129,36 @@ h6 {
   font-size: 108%;
 }
 
-/* line 27, style.sass */
+/* line 28, style.sass */
+body {
+  background-color: #9ae0a1;
+}
+
+/* line 30, style.sass */
 div, ul, ol, li {
-  background-color: rgba(0, 25, 0, 0.2);
+  background-color: #c9f0ce;
   overflow: hidden;
 }
 
 /*-- wrap -- */
-/* line 38, style.sass */
+/* line 41, style.sass */
 #wrap {
-  margin: 0 auto;
-  width: 800px;
+  border-radius: 10px;
+  margin: 30px auto;
+  width: 1000px;
 }
 
 /*-- header -- */
-/* line 44, style.sass */
+/* line 48, style.sass */
 #header {
-  width: 800px;
+  background-color: #09a318;
+  width: 1000px;
 }
-/* line 46, style.sass */
+/* line 51, style.sass */
 #header h1 {
   text-align: center;
 }
-/* line 49, style.sass */
+/* line 54, style.sass */
 #header nav ul li {
   display: block;
   float: left;
@@ -159,24 +166,24 @@ div, ul, ol, li {
   list-style: none;
   text-align: center;
 }
-/* line 55, style.sass */
+/* line 60, style.sass */
 #header nav ul li a {
   display: inline-block;
   line-height: 40px;
 }
 
 /*-- about -- */
-/* line 66, style.sass */
+/* line 71, style.sass */
 #about {
   clear: both;
-  width: 800px;
+  width: 1000px;
 }
-/* line 69, style.sass */
+/* line 74, style.sass */
 #about ol {
   width: 762px;
   margin: 0 auto;
 }
-/* line 72, style.sass */
+/* line 77, style.sass */
 #about ol li {
   float: left;
   width: 250px;
@@ -185,58 +192,58 @@ div, ul, ol, li {
 }
 
 /*-- body -- */
-/* line 86, style.sass */
+/* line 91, style.sass */
 #body {
-  width: 800px;
+  width: 1000px;
 }
-/* line 88, style.sass */
+/* line 93, style.sass */
 #body #main {
   float: left;
   width: 600px;
 }
-/* line 93, style.sass */
+/* line 98, style.sass */
 #body #main .breadcrumbs ol li {
   float: left;
   list-style: none;
 }
-/* line 96, style.sass */
+/* line 101, style.sass */
 #body #main .breadcrumbs a:after {
   content: ">";
   margin: 7px;
 }
-/* line 99, style.sass */
+/* line 104, style.sass */
 #body #main aside#comments {
   margin: 10px;
 }
-/* line 101, style.sass */
+/* line 106, style.sass */
 #body #main aside#comments ul > li {
   margin: 10px;
 }
-/* line 103, style.sass */
+/* line 108, style.sass */
 #body #sub {
   float: right;
-  width: 200px;
-}
-/* line 106, style.sass */
-#body #sub aside.ad {
-  border: 1px solid #f0788c;
-  outline: 1px solid #bc0d35;
-  background-color: #de264c;
-  margin: 4.5px;
-  width: 190px;
-  height: 190px;
+  width: 400px;
 }
 /* line 111, style.sass */
+#body #sub aside.ad {
+  border: 1px solid #ea9a5d;
+  outline: 1px solid #ea9a5d;
+  background-color: #ea9a5d;
+  margin: 4.5px;
+  width: 390px;
+  height: 390px;
+}
+/* line 116, style.sass */
 #body #sub aside.ad p {
   padding: 10px;
 }
-/* line 113, style.sass */
+/* line 118, style.sass */
 #body #sub #local ul {
   margin: 0 4.5px;
-  width: 190px;
+  width: 390px;
   border: 1px solid black;
 }
-/* line 117, style.sass */
+/* line 122, style.sass */
 #body #sub #local ul li {
   height: 50px;
   list-style: none;
@@ -244,17 +251,17 @@ div, ul, ol, li {
   border-color: #666666 #999999 #999999 #666666;
   border-style: solid;
 }
-/* line 123, style.sass */
+/* line 128, style.sass */
 #body #sub #local ul li a {
   margin: 5px;
 }
-/* line 125, style.sass */
+/* line 130, style.sass */
 #body #sub aside.banners {
   margin: 4.5px;
-  width: 190px;
+  width: 390px;
   border: 1px solid black;
 }
-/* line 129, style.sass */
+/* line 134, style.sass */
 #body #sub aside.banners li {
   height: 45px;
   border-width: 1px;
@@ -263,25 +270,26 @@ div, ul, ol, li {
 }
 
 /*-- footer -- */
-/* line 137, style.sass */
+/* line 142, style.sass */
 #footer {
+  background-color: #09a318;
   clear: both;
   width: 100%;
 }
-/* line 140, style.sass */
+/* line 146, style.sass */
 #footer nav {
   line-height: 300%;
   text-align: center;
 }
-/* line 144, style.sass */
+/* line 150, style.sass */
 #footer nav ul li {
   display: inline;
 }
-/* line 146, style.sass */
+/* line 152, style.sass */
 #footer nav ul li a {
   margin: 0 6px;
 }
-/* line 148, style.sass */
+/* line 154, style.sass */
 #footer p.copyright {
   line-height: 400%;
   text-align: center;

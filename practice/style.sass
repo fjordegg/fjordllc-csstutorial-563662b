@@ -17,31 +17,36 @@ h5
 h6
   font-size: $size-14px
 
-// $accent-highlight: rgba(246, 177, 195, 1)
-$accent-light: rgba(240, 120, 140, 1)
-$accent-base: rgba(222, 38, 76, 1)
-$accent-shadow: rgba(188, 13, 53, 1)
-// $accent-dark-shadow: rgba(162, 13, 30, 1)
-$wrap-width: 800px
+$main-color: #09A318
+$base-color: #C9F0CE
+$sub-color: #9AE0A1
+$accent-color: #EA9A5D
+$text-color: #000000
 
+$wrap-width: 1000px
+
+body
+  background-color: $sub-color
 div, ul, ol, li
-  background-color: rgba(0, 25, 0, 0.2)
+  background-color: $base-color
   overflow: hidden
 
 @mixin box-base
-  border: 1px solid $accent-light
-  outline: 1px solid $accent-shadow
-  background-color: $accent-base
+  border: 1px solid $accent-color
+  outline: 1px solid $accent-color
+  background-color: $accent-color
 
 /*-- wrap --
 
 #wrap
-  margin: 0 auto
+  border-radius: 10px
+  margin: 30px auto
   width: $wrap-width
 
 /*-- header --
 
 #header
+  background-color: $main-color
   width: $wrap-width
   h1
     text-align: center
@@ -135,6 +140,7 @@ $sub-contents-margin: ($sub-width - $sub-contents-width - $sub-contents-border) 
 /*-- footer --
 
 #footer
+  background-color: $main-color
   clear: both
   width: 100%
   nav
