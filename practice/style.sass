@@ -23,13 +23,14 @@ $sub-color: #9AE0A1
 $accent-color: #EA9A5D
 $text-color: #000000
 $sub-text-color: #666666
+$border-light: rgba(255, 255, 255, 0.3)
+$border-shadow: rgba(0, 0, 0, 0.2)
 
 $wrap-width: 1000px
 
 body
   background-color: $sub-color
 div, ul, ol, li
-  background-color: $base-color
   overflow: hidden
 
 @mixin box-base
@@ -40,24 +41,32 @@ div, ul, ol, li
 /*-- wrap --
 
 #wrap
+  background-color: $base-color
   border-radius: 10px
   margin: 30px auto
   width: $wrap-width
 
 /*-- header --
+$num-of-nav: 5
+$nav-border-width: 2px
+$nav-part-width: $wrap-width / 5 - $nav-border-width * 2
+$header-background-color: $main-color
+$nav-background-color: $sub-color
 
 #header
-  background-color: $main-color
+  background-color: $header-background-color
   width: $wrap-width
   h1
     text-align: center
   nav ul
+    background-color: $nav-background-color
     li
       display: block
       float: left
-      width: 20%
+      width: $nav-part-width
       list-style: none
       text-align: center
+      border: $nav-border-width solid $main-color
       a
         display: inline-block
         line-height: 40px
@@ -65,13 +74,18 @@ div, ul, ol, li
 /*-- about --
 
 $about-content-width: 240px
-$about-content-border-width: 2px
+$about-content-border-width: 4px
 $about-content-padding: 10px
 $num-of-about-contents: 3
 $about-content-margin: 24px
 $about-contents-width: ($about-content-width + $about-content-padding * 2 + $about-content-margin * 2 + $about-content-border-width * 2) * $num-of-about-contents
 
+$about-content-border-color: $sub-color
+$about-content-background-color: $base-color
+$about-background-color: $main-color
+
 #about
+  background-color: $about-background-color
   clear: both
   width: $wrap-width
   h2
@@ -80,7 +94,8 @@ $about-contents-width: ($about-content-width + $about-content-padding * 2 + $abo
     width: $about-contents-width
     margin: 0 auto
     li
-      border: $about-content-border-width solid green
+      background-color: $about-content-background-color
+      border: $about-content-border-width solid $about-content-border-color
       border-radius: 7px
       float: left
       width: $about-content-width
@@ -96,6 +111,8 @@ $main-width: $wrap-width - $sub-width - $main-margin * 2
 $sub-contents-width: $sub-width - 10px
 $sub-contents-border: 1px
 $sub-contents-margin: ($sub-width - $sub-contents-width - $sub-contents-border) / 2
+
+$body-border-color: $sub-color
 
 #body
   width: $wrap-width
@@ -130,23 +147,23 @@ $sub-contents-margin: ($sub-width - $sub-contents-width - $sub-contents-border) 
     #local ul
       margin: 0 $sub-contents-margin
       width: $sub-contents-width
-      border: $sub-contents-border solid black
+      border: $sub-contents-border solid $body-border-color
       li
         height: 50px
         list-style: none
         border-width: $sub-contents-border
-        border-color: #666 #999 #999 #666
+        border-color: $border-shadow $border-light $border-light $border-shadow
         border-style: solid
         a
           margin: 5px
     aside.banners
       margin: $sub-contents-margin
       width: $sub-contents-width
-      border: $sub-contents-border solid black
+      border: $sub-contents-border solid $body-border-color
       li
         height: 45px
         border-width: $sub-contents-border
-        border-color: #666 #999 #999 #666
+        border-color: $border-shadow $border-light $border-light $border-shadow
         border-style: solid
 
 /*-- footer --

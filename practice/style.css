@@ -129,67 +129,74 @@ h6 {
   font-size: 108%;
 }
 
-/* line 29, style.sass */
+/* line 31, style.sass */
 body {
   background-color: #9ae0a1;
 }
 
-/* line 31, style.sass */
+/* line 33, style.sass */
 div, ul, ol, li {
-  background-color: #c9f0ce;
   overflow: hidden;
 }
 
 /*-- wrap -- */
-/* line 42, style.sass */
+/* line 43, style.sass */
 #wrap {
+  background-color: #c9f0ce;
   border-radius: 10px;
   margin: 30px auto;
   width: 1000px;
 }
 
 /*-- header -- */
-/* line 49, style.sass */
+/* line 56, style.sass */
 #header {
   background-color: #09a318;
   width: 1000px;
 }
-/* line 52, style.sass */
+/* line 59, style.sass */
 #header h1 {
   text-align: center;
 }
-/* line 55, style.sass */
+/* line 61, style.sass */
+#header nav ul {
+  background-color: #9ae0a1;
+}
+/* line 63, style.sass */
 #header nav ul li {
   display: block;
   float: left;
-  width: 20%;
+  width: 196px;
   list-style: none;
   text-align: center;
+  border: 2px solid #09a318;
 }
-/* line 61, style.sass */
+/* line 70, style.sass */
 #header nav ul li a {
   display: inline-block;
   line-height: 40px;
 }
 
 /*-- about -- */
-/* line 74, style.sass */
+/* line 87, style.sass */
 #about {
+  background-color: #09a318;
   clear: both;
   width: 1000px;
 }
-/* line 77, style.sass */
+/* line 91, style.sass */
 #about h2 {
   line-height: 200%;
 }
-/* line 79, style.sass */
+/* line 93, style.sass */
 #about ol {
-  width: 936px;
+  width: 948px;
   margin: 0 auto;
 }
-/* line 82, style.sass */
+/* line 96, style.sass */
 #about ol li {
-  border: 2px solid green;
+  background-color: #c9f0ce;
+  border: 4px solid #9ae0a1;
   border-radius: 7px;
   float: left;
   width: 240px;
@@ -199,44 +206,44 @@ div, ul, ol, li {
 }
 
 /*-- body -- */
-/* line 100, style.sass */
+/* line 117, style.sass */
 #body {
   width: 1000px;
 }
-/* line 102, style.sass */
+/* line 119, style.sass */
 #body #main {
   float: left;
   margin: 20px;
   width: 760px;
 }
-/* line 108, style.sass */
+/* line 125, style.sass */
 #body #main .breadcrumbs ol li {
   float: left;
   list-style: none;
 }
-/* line 111, style.sass */
+/* line 128, style.sass */
 #body #main .breadcrumbs a:after {
   content: ">";
   margin: 7px;
 }
-/* line 114, style.sass */
+/* line 131, style.sass */
 #body #main aside#comments {
   margin: 10px;
 }
-/* line 116, style.sass */
+/* line 133, style.sass */
 #body #main aside#comments ul > li {
   margin: 10px;
 }
-/* line 118, style.sass */
+/* line 135, style.sass */
 #body #main aside#comments ul > li dl {
   color: #666666;
 }
-/* line 120, style.sass */
+/* line 137, style.sass */
 #body #sub {
   float: right;
   width: 200px;
 }
-/* line 123, style.sass */
+/* line 140, style.sass */
 #body #sub aside.ad {
   border: 1px solid #ea9a5d;
   outline: 1px solid #ea9a5d;
@@ -245,63 +252,63 @@ div, ul, ol, li {
   width: 190px;
   height: 190px;
 }
-/* line 128, style.sass */
+/* line 145, style.sass */
 #body #sub aside.ad p {
   padding: 10px;
 }
-/* line 130, style.sass */
+/* line 147, style.sass */
 #body #sub #local ul {
   margin: 0 4.5px;
   width: 190px;
-  border: 1px solid black;
+  border: 1px solid #9ae0a1;
 }
-/* line 134, style.sass */
+/* line 151, style.sass */
 #body #sub #local ul li {
   height: 50px;
   list-style: none;
   border-width: 1px;
-  border-color: #666666 #999999 #999999 #666666;
+  border-color: rgba(0, 0, 0, 0.2) rgba(255, 255, 255, 0.3) rgba(255, 255, 255, 0.3) rgba(0, 0, 0, 0.2);
   border-style: solid;
 }
-/* line 140, style.sass */
+/* line 157, style.sass */
 #body #sub #local ul li a {
   margin: 5px;
 }
-/* line 142, style.sass */
+/* line 159, style.sass */
 #body #sub aside.banners {
   margin: 4.5px;
   width: 190px;
-  border: 1px solid black;
+  border: 1px solid #9ae0a1;
 }
-/* line 146, style.sass */
+/* line 163, style.sass */
 #body #sub aside.banners li {
   height: 45px;
   border-width: 1px;
-  border-color: #666666 #999999 #999999 #666666;
+  border-color: rgba(0, 0, 0, 0.2) rgba(255, 255, 255, 0.3) rgba(255, 255, 255, 0.3) rgba(0, 0, 0, 0.2);
   border-style: solid;
 }
 
 /*-- footer -- */
-/* line 154, style.sass */
+/* line 171, style.sass */
 #footer {
   background-color: #09a318;
   clear: both;
   width: 100%;
 }
-/* line 158, style.sass */
+/* line 175, style.sass */
 #footer nav {
   line-height: 300%;
   text-align: center;
 }
-/* line 162, style.sass */
+/* line 179, style.sass */
 #footer nav ul li {
   display: inline;
 }
-/* line 164, style.sass */
+/* line 181, style.sass */
 #footer nav ul li a {
   margin: 0 6px;
 }
-/* line 166, style.sass */
+/* line 183, style.sass */
 #footer p.copyright {
   line-height: 400%;
   text-align: center;
