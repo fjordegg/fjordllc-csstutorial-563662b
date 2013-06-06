@@ -129,71 +129,85 @@ h6 {
   font-size: 108%;
 }
 
-/* line 31, style.sass */
+/* line 35, style.sass */
 body {
   background-color: #9ae0a1;
 }
 
-/* line 33, style.sass */
+/* line 37, style.sass */
 div, ul, ol, li {
   overflow: hidden;
 }
 
-/*-- wrap -- */
+/* line 39, style.sass */
+a {
+  font-weight: bold;
+  color: #09a318;
+  text-decoration: none;
+}
 /* line 43, style.sass */
+a:hover {
+  background-color: rgba(255, 255, 0, 0.7);
+}
+
+/*-- wrap -- */
+/* line 53, style.sass */
 #wrap {
   background-color: #c9f0ce;
   border-radius: 10px;
   margin: 30px auto;
-  width: 1000px;
+  width: 960px;
 }
 
 /*-- header -- */
-/* line 56, style.sass */
+/* line 68, style.sass */
 #header {
   background-color: #09a318;
-  width: 1000px;
+  width: 960px;
 }
-/* line 59, style.sass */
+/* line 71, style.sass */
 #header h1 {
   text-align: center;
 }
-/* line 61, style.sass */
+/* line 73, style.sass */
 #header nav ul {
-  background-color: #9ae0a1;
+  margin: 0 auto;
+  width: 950px;
+  background-color: #09a318;
 }
-/* line 63, style.sass */
+/* line 77, style.sass */
 #header nav ul li {
+  background-color: #9ae0a1;
   display: block;
   float: left;
-  width: 196px;
+  width: 186px;
   list-style: none;
   text-align: center;
   border: 2px solid #09a318;
 }
-/* line 70, style.sass */
+/* line 85, style.sass */
 #header nav ul li a {
-  display: inline-block;
+  display: block;
   line-height: 40px;
 }
 
 /*-- about -- */
-/* line 87, style.sass */
+/* line 102, style.sass */
 #about {
   background-color: #09a318;
   clear: both;
-  width: 1000px;
+  width: 960px;
 }
-/* line 91, style.sass */
+/* line 106, style.sass */
 #about h2 {
   line-height: 200%;
 }
-/* line 93, style.sass */
+/* line 108, style.sass */
 #about ol {
   width: 948px;
   margin: 0 auto;
 }
-/* line 96, style.sass */
+/* line 111, style.sass */
 #about ol li {
   background-color: #c9f0ce;
   border: 4px solid #9ae0a1;
@@ -206,44 +220,44 @@ div, ul, ol, li {
 }
 
 /*-- body -- */
-/* line 117, style.sass */
+/* line 132, style.sass */
 #body {
-  width: 1000px;
+  width: 960px;
 }
-/* line 119, style.sass */
+/* line 134, style.sass */
 #body #main {
   float: left;
   margin: 20px;
-  width: 760px;
+  width: 720px;
 }
-/* line 125, style.sass */
+/* line 140, style.sass */
 #body #main .breadcrumbs ol li {
   float: left;
   list-style: none;
 }
-/* line 128, style.sass */
+/* line 143, style.sass */
 #body #main .breadcrumbs a:after {
   content: ">";
   margin: 7px;
 }
-/* line 131, style.sass */
+/* line 146, style.sass */
 #body #main aside#comments {
   margin: 10px;
 }
-/* line 133, style.sass */
+/* line 148, style.sass */
 #body #main aside#comments ul > li {
   margin: 10px;
 }
-/* line 135, style.sass */
+/* line 150, style.sass */
 #body #main aside#comments ul > li dl {
-  color: #666666;
+  color: #999999;
 }
-/* line 137, style.sass */
+/* line 152, style.sass */
 #body #sub {
   float: right;
   width: 200px;
 }
-/* line 140, style.sass */
+/* line 155, style.sass */
 #body #sub aside.ad {
   border: 1px solid #ea9a5d;
   outline: 1px solid #ea9a5d;
@@ -252,17 +266,17 @@ div, ul, ol, li {
   width: 190px;
   height: 190px;
 }
-/* line 145, style.sass */
+/* line 160, style.sass */
 #body #sub aside.ad p {
   padding: 10px;
 }
-/* line 147, style.sass */
+/* line 162, style.sass */
 #body #sub #local ul {
   margin: 0 4.5px;
   width: 190px;
   border: 1px solid #9ae0a1;
 }
-/* line 151, style.sass */
+/* line 166, style.sass */
 #body #sub #local ul li {
   height: 50px;
   list-style: none;
@@ -270,17 +284,17 @@ div, ul, ol, li {
   border-color: rgba(0, 0, 0, 0.2) rgba(255, 255, 255, 0.3) rgba(255, 255, 255, 0.3) rgba(0, 0, 0, 0.2);
   border-style: solid;
 }
-/* line 157, style.sass */
+/* line 172, style.sass */
 #body #sub #local ul li a {
   margin: 5px;
 }
-/* line 159, style.sass */
+/* line 174, style.sass */
 #body #sub aside.banners {
   margin: 4.5px;
   width: 190px;
   border: 1px solid #9ae0a1;
 }
-/* line 163, style.sass */
+/* line 178, style.sass */
 #body #sub aside.banners li {
   height: 45px;
   border-width: 1px;
@@ -289,27 +303,28 @@ div, ul, ol, li {
 }
 
 /*-- footer -- */
-/* line 171, style.sass */
+/* line 186, style.sass */
 #footer {
   background-color: #09a318;
   clear: both;
   width: 100%;
 }
-/* line 175, style.sass */
+/* line 190, style.sass */
 #footer nav {
-  line-height: 300%;
   text-align: center;
+  padding: 20px;
 }
-/* line 179, style.sass */
+/* line 194, style.sass */
 #footer nav ul li {
   display: inline;
 }
-/* line 181, style.sass */
+/* line 196, style.sass */
 #footer nav ul li a {
+  color: #9ae0a1;
   margin: 0 6px;
 }
-/* line 183, style.sass */
+/* line 199, style.sass */
 #footer p.copyright {
-  line-height: 400%;
+  margin: 10px 0 0 0;
   text-align: center;
 }

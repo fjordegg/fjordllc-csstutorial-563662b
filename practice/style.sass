@@ -21,17 +21,27 @@ $main-color: #09A318
 $base-color: #C9F0CE
 $sub-color: #9AE0A1
 $accent-color: #EA9A5D
-$text-color: #000000
-$sub-text-color: #666666
+
+$text-color: #333333
+$sub-text-color: #999999
+$link-color: $main-color
+$link-hover-background-color: rgba(255, 255, 0, 0.7)
+
 $border-light: rgba(255, 255, 255, 0.3)
 $border-shadow: rgba(0, 0, 0, 0.2)
 
-$wrap-width: 1000px
+$wrap-width: 960px
 
 body
   background-color: $sub-color
 div, ul, ol, li
   overflow: hidden
+a
+  font-weight: bold
+  color: $link-color
+  text-decoration: none
+  &:hover
+    background-color: $link-hover-background-color
 
 @mixin box-base
   border: 1px solid $accent-color
@@ -49,8 +59,10 @@ div, ul, ol, li
 /*-- header --
 $num-of-nav: 5
 $nav-border-width: 2px
-$nav-part-width: $wrap-width / 5 - $nav-border-width * 2
+$nav-part-width: ($wrap-width - 10px) / 5 - $nav-border-width * 2
+$nav-width: ($nav-part-width + $nav-border-width * 2) * $num-of-nav
 $header-background-color: $main-color
+$navs-background-color: $main-color
 $nav-background-color: $sub-color
 
 #header
@@ -59,8 +71,11 @@ $nav-background-color: $sub-color
   h1
     text-align: center
   nav ul
-    background-color: $nav-background-color
+    margin: 0 auto
+    width: $nav-width
+    background-color: $navs-background-color
     li
+      background-color: $nav-background-color
       display: block
       float: left
       width: $nav-part-width
@@ -68,7 +83,7 @@ $nav-background-color: $sub-color
       text-align: center
       border: $nav-border-width solid $main-color
       a
-        display: inline-block
+        display: block
         line-height: 40px
 
 /*-- about --
@@ -173,13 +188,14 @@ $body-border-color: $sub-color
   clear: both
   width: 100%
   nav
-    line-height: 300%
     text-align: center
+    padding: 20px
     ul
       li
         display: inline
         a
+          color: $sub-color
           margin: 0 6px
   p.copyright
-    line-height: 400%
+    margin: 10px 0 0 0
     text-align: center
