@@ -291,23 +291,55 @@ a:hover {
   box-shadow: white 0 1px 0;
 }
 /* line 184, style.sass */
-#body #main aside#comments {
-  margin: 10px;
-}
-/* line 186, style.sass */
-#body #main aside#comments ul > li {
+#body #main article .body table {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: white 0 1px 0;
+  -moz-box-shadow: white 0 1px 0;
+  box-shadow: white 0 1px 0;
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: white 0 1px 0 0;
+  -moz-box-shadow: white 0 1px 0 0;
+  box-shadow: white 0 1px 0 0;
   margin: 10px;
 }
 /* line 188, style.sass */
+#body #main article .body table th, #body #main article .body table td {
+  border: 1px solid #09a318;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: white 0 1px 0 inset;
+  -moz-box-shadow: white 0 1px 0 inset;
+  box-shadow: white 0 1px 0 inset;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: white 0 1px 0 0 inset;
+  -moz-box-shadow: white 0 1px 0 0 inset;
+  box-shadow: white 0 1px 0 0 inset;
+}
+/* line 192, style.sass */
+#body #main article .body table th {
+  background-color: #09a318;
+}
+/* line 194, style.sass */
+#body #main article .body table td {
+  background-color: #c9f0ce;
+}
+/* line 196, style.sass */
+#body #main aside#comments {
+  margin: 10px;
+}
+/* line 198, style.sass */
+#body #main aside#comments ul > li {
+  margin: 10px;
+}
+/* line 200, style.sass */
 #body #main aside#comments ul > li dl {
   color: #999999;
 }
-/* line 190, style.sass */
+/* line 202, style.sass */
 #body #sub {
   float: right;
   width: 200px;
 }
-/* line 193, style.sass */
+/* line 205, style.sass */
 #body #sub aside.ad {
   border: 1px solid #ea9a5d;
   outline: 1px solid #ea9a5d;
@@ -316,17 +348,17 @@ a:hover {
   width: 190px;
   height: 190px;
 }
-/* line 198, style.sass */
+/* line 210, style.sass */
 #body #sub aside.ad p {
   padding: 10px;
 }
-/* line 200, style.sass */
+/* line 212, style.sass */
 #body #sub #local ul {
   margin: 0 4.5px;
   width: 190px;
   border: 1px solid #9ae0a1;
 }
-/* line 204, style.sass */
+/* line 216, style.sass */
 #body #sub #local ul li {
   height: 50px;
   list-style: none;
@@ -334,17 +366,17 @@ a:hover {
   border-color: rgba(0, 0, 0, 0.2) rgba(255, 255, 255, 0.3) rgba(255, 255, 255, 0.3) rgba(0, 0, 0, 0.2);
   border-style: solid;
 }
-/* line 210, style.sass */
+/* line 222, style.sass */
 #body #sub #local ul li a {
   margin: 5px;
 }
-/* line 212, style.sass */
+/* line 224, style.sass */
 #body #sub aside.banners {
   margin: 4.5px;
   width: 190px;
   border: 1px solid #9ae0a1;
 }
-/* line 216, style.sass */
+/* line 228, style.sass */
 #body #sub aside.banners li {
   height: 45px;
   border-width: 1px;
@@ -368,31 +400,31 @@ a:hover {
 }
 
 /*-- footer -- */
-/* line 227, style.sass */
+/* line 239, style.sass */
 #footer {
   background-color: #09a318;
   clear: both;
   width: 100%;
 }
-/* line 231, style.sass */
+/* line 243, style.sass */
 #footer nav {
   text-align: center;
   padding: 20px;
 }
-/* line 235, style.sass */
+/* line 247, style.sass */
 #footer nav ul li {
   display: inline;
 }
-/* line 237, style.sass */
+/* line 249, style.sass */
 #footer nav ul li a {
   color: #007000;
   margin: 0 6px;
 }
-/* line 240, style.sass */
+/* line 252, style.sass */
 #footer nav ul li a:hover {
   color: #6fff7e;
 }
-/* line 242, style.sass */
+/* line 254, style.sass */
 #footer p.copyright {
   margin: 10px 0 0 0;
   text-align: center;

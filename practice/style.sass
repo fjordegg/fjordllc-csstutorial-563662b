@@ -181,6 +181,18 @@ $body-border-color: $sub-color
         padding: 10px 0
         @include zurui-line-top(.1, 1)
         @include zurui-line-bottom(.1, 1)
+        table
+          @include zurui-line-bottom(.3, 1)
+          @include zurui-line-right(.3, 1)
+          margin: 10px
+          th, td
+            border: 1px solid $main-color
+            @include zurui-line-top(.1, 1)
+            @include zurui-line-left(.1, 1)
+          th
+            background-color: $main-color
+          td
+            background-color: $base-color
     aside#comments
       margin: 10px
       ul > li
