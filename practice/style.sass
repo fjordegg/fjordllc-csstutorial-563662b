@@ -24,7 +24,8 @@ $accent-color: #EA9A5D
 
 $text-color: #333333
 $sub-text-color: #999999
-$link-color: $main-color
+$link-light: $main-color
+$link-dark: $link-light - #333
 $link-hover-background-color: rgba(255, 255, 0, 0.7)
 
 $border-light: rgba(255, 255, 255, 0.3)
@@ -38,10 +39,10 @@ div, ul, ol, li
   overflow: hidden
 a
   font-weight: bold
-  color: $link-color
+  color: $link-light
   text-decoration: none
   &:hover
-    background-color: $link-hover-background-color
+    color: $link-dark
 
 @mixin box-base
   border: 1px solid $accent-color
@@ -85,6 +86,8 @@ $nav-background-color: $sub-color
       a
         display: block
         line-height: 40px
+        &:hover
+          background-color: $link-hover-background-color
 
 /*-- about --
 
@@ -143,6 +146,9 @@ $body-border-color: $sub-color
       a:after
         content: ">"
         margin: 7px
+    article
+      background-color: rgba(255, 255, 255, 0.6)
+      padding: 5px 15px
     aside#comments
       margin: 10px
       ul > li
@@ -194,8 +200,10 @@ $body-border-color: $sub-color
       li
         display: inline
         a
-          color: $sub-color
+          color: $link-dark
           margin: 0 6px
+          &:hover
+            color: $link-light + #666
   p.copyright
     margin: 10px 0 0 0
     text-align: center
