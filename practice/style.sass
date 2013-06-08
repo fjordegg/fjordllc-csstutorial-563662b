@@ -2,6 +2,7 @@
 @import compass/css3/box-shadow
 @import compass/css3/text-shadow
 @import compass/css3/border-radius
+@import compass/css3/images
 @import yui_fonts
 
 $main-color: #09A318
@@ -20,41 +21,6 @@ $border-light: rgba(255, 255, 255, 0.3)
 $border-shadow: rgba(0, 0, 0, 0.2)
 
 $wrap-width: 960px
-
-body
-  color: $text-color
-  background-color: $sub-color
-div, ul, ol, li
-  overflow: hidden
-ul > li
-  list-style: disc inside
-ol > li
-  list-style: decimal inside
-a
-  font-weight: bold
-  color: $link-light
-  text-decoration: none
-  &:hover
-    color: $link-dark
-
-h1, h2, h3, h4, h5, h6
-  color: $text-color
-  @include text-shadow(2px 2px 1px $text-shadow-color)
-  font-weight: bold
-  line-height: 300%
-h1
-  font-size: $size-42px
-  line-height: 250%
-h2
-  font-size: $size-22px
-h3
-  font-size: $size-20px
-h4
-  font-size: $size-18px
-h5
-  font-size: $size-16px
-h6
-  font-size: $size-14px
 
 @mixin box-base
   border: 1px solid $accent-color
@@ -76,6 +42,76 @@ h6
 @mixin zurui-line-bottom($op1: .2, $op2: .3)
   border-bottom: 1px solid rgba(0, 0, 0, $op1)
   @include box-shadow(rgba(255, 255, 255, $op2) 0 1px 0)
+
+@mixin zurui-gradation-top-lighten($color: $main-color, $lighten: 10%)
+  background-color: $color
+  @include filter-gradient(lighten($color, $lighten), $color, vertical)
+  @include background-image(linear-gradient(lighten($color, $lighten) 0%, $color 100%))
+
+@mixin zurui-gradation-top-darken($color: $main-color, $darken: 10%)
+  background-color: $color
+  @include filter-gradient(darken($color, $darken), $color, vertical)
+  @include background-image(linear-gradient(darken($color, $darken) 0%, $color 100%))
+
+body
+  color: $text-color
+  background-color: $sub-color
+div, ul, ol, li
+  overflow: hidden
+p
+  margin: 5px 0
+
+blockquote
+  margin: 10px 0
+  padding: 5px 0
+  opacity: 0.8
+  font-style: italic
+  @include zurui-line-top
+  @include zurui-line-left
+  @include zurui-line-right
+  @include zurui-line-bottom
+  &:before
+    content: '”'
+    font-size: 500%
+    color: $sub-text-color
+    font-family: 'cursive'
+    position: absolute
+    top: 1
+    left: 1
+  p
+    padding: 0 1em 0 4em
+ul > li
+  list-style: disc inside
+ol > li
+  list-style: decimal inside
+a
+  font-weight: bold
+  color: $link-light
+  text-decoration: none
+  &:hover
+    color: $link-dark
+
+strong
+  font-weight: bold
+  font-size: $size-14px
+h1, h2, h3, h4, h5, h6
+  color: $text-color
+  @include text-shadow(2px 2px 1px $text-shadow-color)
+  font-weight: bold
+  line-height: 300%
+h1
+  font-size: $size-42px
+  line-height: 250%
+h2
+  font-size: $size-22px
+h3
+  font-size: $size-20px
+h4
+  font-size: $size-18px
+h5
+  font-size: $size-16px
+h6
+  font-size: $size-14px
 
 /*-- wrap --
 
@@ -120,6 +156,7 @@ $h1-text-shadow-color: rgba($h1-text-color, 0.2)
         line-height: 40px
         @include zurui-line-right(.2, 0)
         @include zurui-line-bottom(.2, 0)
+        @include zurui-gradation-top-lighten($sub-color - #111, 20%)
         &:hover
           background-color: $link-hover-background-color
           @include zurui-line-top(.2, 0)
@@ -223,6 +260,7 @@ $body-border-color: $sub-color
     width: $sub-width
     aside.ad
       @include box-base
+      @include zurui-gradation-top-lighten($accent-color)
       margin: $sub-contents-margin
       width: $sub-contents-width
       height: $sub-contents-width
@@ -256,6 +294,7 @@ $body-border-color: $sub-color
 /*-- footer --
 
 #footer
+  @include zurui-gradation-top-lighten
   background-color: $main-color
   clear: both
   width: 100%
