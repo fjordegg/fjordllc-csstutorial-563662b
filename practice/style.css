@@ -291,8 +291,24 @@ h6 {
 #body #main article {
   background-color: rgba(255, 255, 255, 0.6);
   padding: 5px 15px;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: white 0 1px 0 inset;
+  -moz-box-shadow: white 0 1px 0 inset;
+  box-shadow: white 0 1px 0 inset;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: white 0 1px 0 0 inset;
+  -moz-box-shadow: white 0 1px 0 0 inset;
+  box-shadow: white 0 1px 0 0 inset;
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: white 0 1px 0 0;
+  -moz-box-shadow: white 0 1px 0 0;
+  box-shadow: white 0 1px 0 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: white 0 1px 0;
+  -moz-box-shadow: white 0 1px 0;
+  box-shadow: white 0 1px 0;
 }
-/* line 190, style.sass */
+/* line 194, style.sass */
 #body #main article .body {
   margin: 10px 0;
   padding: 10px 0;
@@ -305,15 +321,15 @@ h6 {
   -moz-box-shadow: white 0 1px 0;
   box-shadow: white 0 1px 0;
 }
-/* line 195, style.sass */
+/* line 199, style.sass */
 #body #main article .body ul, #body #main article .body ol {
   margin: 10px;
 }
-/* line 197, style.sass */
+/* line 201, style.sass */
 #body #main article .body ul li, #body #main article .body ol li {
   line-height: 160%;
 }
-/* line 199, style.sass */
+/* line 203, style.sass */
 #body #main article .body table {
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   -webkit-box-shadow: white 0 1px 0;
@@ -325,7 +341,7 @@ h6 {
   box-shadow: white 0 1px 0 0;
   margin: 20px;
 }
-/* line 203, style.sass */
+/* line 207, style.sass */
 #body #main article .body table th, #body #main article .body table td {
   border: 1px solid #09a318;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
@@ -337,32 +353,32 @@ h6 {
   -moz-box-shadow: white 0 1px 0 0 inset;
   box-shadow: white 0 1px 0 0 inset;
 }
-/* line 207, style.sass */
+/* line 211, style.sass */
 #body #main article .body table th {
   background-color: #09a318;
 }
-/* line 209, style.sass */
+/* line 213, style.sass */
 #body #main article .body table td {
   background-color: #c9f0ce;
 }
-/* line 211, style.sass */
+/* line 215, style.sass */
 #body #main aside#comments {
   margin: 10px;
 }
-/* line 213, style.sass */
+/* line 217, style.sass */
 #body #main aside#comments ul > li {
   margin: 10px;
 }
-/* line 215, style.sass */
+/* line 219, style.sass */
 #body #main aside#comments ul > li dl {
   color: #999999;
 }
-/* line 217, style.sass */
+/* line 221, style.sass */
 #body #sub {
   float: right;
   width: 200px;
 }
-/* line 220, style.sass */
+/* line 224, style.sass */
 #body #sub aside.ad {
   border: 1px solid #ea9a5d;
   outline: 1px solid #ea9a5d;
@@ -371,17 +387,17 @@ h6 {
   width: 190px;
   height: 190px;
 }
-/* line 225, style.sass */
+/* line 229, style.sass */
 #body #sub aside.ad p {
   padding: 10px;
 }
-/* line 227, style.sass */
+/* line 231, style.sass */
 #body #sub #local ul {
   margin: 0 4.5px;
   width: 190px;
   border: 1px solid #9ae0a1;
 }
-/* line 231, style.sass */
+/* line 235, style.sass */
 #body #sub #local ul li {
   height: 50px;
   list-style: none;
@@ -389,17 +405,17 @@ h6 {
   border-color: rgba(0, 0, 0, 0.2) rgba(255, 255, 255, 0.3) rgba(255, 255, 255, 0.3) rgba(0, 0, 0, 0.2);
   border-style: solid;
 }
-/* line 237, style.sass */
+/* line 241, style.sass */
 #body #sub #local ul li a {
   margin: 5px;
 }
-/* line 239, style.sass */
+/* line 243, style.sass */
 #body #sub aside.banners {
   margin: 4.5px;
   width: 190px;
   border: 1px solid #9ae0a1;
 }
-/* line 243, style.sass */
+/* line 247, style.sass */
 #body #sub aside.banners li {
   height: 45px;
   border-width: 1px;
@@ -423,31 +439,31 @@ h6 {
 }
 
 /*-- footer -- */
-/* line 254, style.sass */
+/* line 258, style.sass */
 #footer {
   background-color: #09a318;
   clear: both;
   width: 100%;
 }
-/* line 258, style.sass */
+/* line 262, style.sass */
 #footer nav {
   text-align: center;
   padding: 20px;
 }
-/* line 262, style.sass */
+/* line 266, style.sass */
 #footer nav ul li {
   display: inline;
 }
-/* line 264, style.sass */
+/* line 268, style.sass */
 #footer nav ul li a {
   color: #007000;
   margin: 0 6px;
 }
-/* line 267, style.sass */
+/* line 271, style.sass */
 #footer nav ul li a:hover {
   color: #6fff7e;
 }
-/* line 269, style.sass */
+/* line 273, style.sass */
 #footer p.copyright {
   margin: 10px 0 0 0;
   text-align: center;
