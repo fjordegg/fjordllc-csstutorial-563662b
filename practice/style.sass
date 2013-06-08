@@ -21,6 +21,22 @@ $border-shadow: rgba(0, 0, 0, 0.2)
 
 $wrap-width: 960px
 
+body
+  color: $text-color
+  background-color: $sub-color
+div, ul, ol, li
+  overflow: hidden
+ul > li
+  list-style: disc inside
+ol > li
+  list-style: decimal inside
+a
+  font-weight: bold
+  color: $link-light
+  text-decoration: none
+  &:hover
+    color: $link-dark
+
 h1, h2, h3, h4, h5, h6
   color: $text-color
   @include text-shadow(2px 2px 1px $text-shadow-color)
@@ -39,21 +55,6 @@ h5
   font-size: $size-16px
 h6
   font-size: $size-14px
-
-body
-  background-color: $sub-color
-div, ul, ol, li
-  overflow: hidden
-ul > li
-  list-style: disc inside
-ol > li
-  list-style: decimal inside
-a
-  font-weight: bold
-  color: $link-light
-  text-decoration: none
-  &:hover
-    color: $link-dark
 
 @mixin box-base
   border: 1px solid $accent-color
@@ -198,7 +199,7 @@ $body-border-color: $sub-color
         table
           @include zurui-line-bottom(.3, 1)
           @include zurui-line-right(.3, 1)
-          margin: 10px
+          margin: 20px
           th, td
             border: 1px solid $main-color
             @include zurui-line-top(.1, 1)
