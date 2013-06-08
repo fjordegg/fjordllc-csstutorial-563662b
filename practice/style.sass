@@ -4,11 +4,31 @@
 @import compass/css3/border-radius
 @import yui_fonts
 
+$main-color: #09A318
+$base-color: #C9F0CE
+$sub-color: #9AE0A1
+$accent-color: #EA9A5D
+
+$text-color: #333333
+$text-shadow-color: rgba($text-color, 0.2)
+$sub-text-color: #999999
+$link-light: $main-color
+$link-dark: $link-light - #333
+$link-hover-background-color: rgba(255, 255, 255, 0.3)
+
+$border-light: rgba(255, 255, 255, 0.3)
+$border-shadow: rgba(0, 0, 0, 0.2)
+
+$wrap-width: 960px
+
 h1, h2, h3, h4, h5, h6
+  color: $text-color
+  @include text-shadow(2px 2px 1px $text-shadow-color)
   font-weight: bold
   line-height: 300%
 h1
-  font-size: $size-26px
+  font-size: $size-42px
+  line-height: 250%
 h2
   font-size: $size-22px
 h3
@@ -19,23 +39,6 @@ h5
   font-size: $size-16px
 h6
   font-size: $size-14px
-
-$main-color: #09A318
-$base-color: #C9F0CE
-$sub-color: #9AE0A1
-$accent-color: #EA9A5D
-
-$text-color: #333333
-$text-shadow-color: rgba($text-color, 0.4)
-$sub-text-color: #999999
-$link-light: $main-color
-$link-dark: $link-light - #333
-$link-hover-background-color: rgba(255, 255, 255, 0.3)
-
-$border-light: rgba(255, 255, 255, 0.3)
-$border-shadow: rgba(0, 0, 0, 0.2)
-
-$wrap-width: 960px
 
 body
   background-color: $sub-color
@@ -89,13 +92,16 @@ $nav-width: ($nav-part-width + $nav-border-width * 2) * $num-of-nav
 $header-background-color: $main-color
 $navs-background-color: $main-color
 $nav-background-color: $sub-color
+$h1-text-color: #FFF
+$h1-text-shadow-color: rgba($h1-text-color, 0.2)
 
 #header
   background-color: $header-background-color
   width: $wrap-width
   h1
     text-align: center
-    @include text-shadow(3px 3px 0 $text-shadow-color)
+    color: $h1-text-color
+    @include text-shadow(3px 3px 1px $h1-text-shadow-color)
   nav ul
     margin: 0 auto
     width: $nav-width
